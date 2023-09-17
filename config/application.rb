@@ -14,6 +14,8 @@ module R7base
 
     config.active_storage.variant_processor = :vips
 
+    # Change the primary key default type to UUIDs.
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files

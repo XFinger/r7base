@@ -63,9 +63,13 @@ group :test do
 end
 gem "vite_rails"
 gem "vite_ruby"
+# Image processing
 gem "ruby-vips", "~> 2.1", ">= 2.1.4"
+gem "image_processing", ">= 1.2"
+
+
 gem "annotate", group: :development
 gem "devise"
-gem "name_of_person"
+#gem "name_of_person" #adds first and last name to user table
 gem "stimulus-rails"
 gem "turbo-rails"
