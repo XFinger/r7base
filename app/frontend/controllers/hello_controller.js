@@ -2,15 +2,18 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects with data-controller="hello"
 export default class extends Controller {
-  static targets = [ "name", "output" ]
+  
 
   connect() {
-    console.log('hello controller connected ');
+    console.log('hello controller connected ')
   }
 
+  static targets = [ "name" ]
   greet() {
     console.log('hello world!!');
-    this.outputTarget.textContent = `Hello, ${this.nameTarget.value}!`
+    const element = this.nameTarget
+    const name = element.value
+    console.log(`Hello, ${name}!`)
   }
 }
 

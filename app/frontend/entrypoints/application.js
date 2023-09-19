@@ -1,7 +1,10 @@
 //import { Turbo } from "@hotwired/turbo-rails";
 
 //window.Turbo = Turbo;
+import '../controllers'
+import "./main.scss"
+//import '../../javascript/controllers'
 
-import "./main.scss";
+
 
 console.log("**************application.js in entrypoints!")
