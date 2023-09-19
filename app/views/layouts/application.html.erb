@@ -27,6 +27,20 @@
       <%= render "shared/flash" %>
       <main class="container flex flex-col flex-1 px-5 mx-auto my-12">
         <%= yield %>
+
+        <!-- test hello controller with stimulus -->
+<div data-controller="hello">
+  <input data-hello-target="name" type="text">
+
+  <button data-action="click->hello#greet">Greet</button>
+
+
+  <span data-hello-target="output"></span>
+
+</div>
+
+
+
       </main>
       <%= render "shared/footer" %>
     </div>
