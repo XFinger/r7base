@@ -73,3 +73,4 @@ gem "devise"
 #gem "name_of_person" #adds first and last name to user table
 gem "stimulus-rails"
 gem "turbo-rails"
+gem "view_component"
